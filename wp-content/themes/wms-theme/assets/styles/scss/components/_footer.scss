@@ -1,0 +1,134 @@
+.find_wine {
+    background: url('https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/images/bg-footer-field.jpg') no-repeat;
+    background-size: cover !important;
+    background-position: bottom center;
+    padding: 500px 0 275px 0;
+    position: relative;
+    text-align: center;
+    .box {
+        background: $white;
+        border: 1px solid $black;
+        display: table;
+        padding: 40px 60px 55px 60px;
+        left: 50%;
+        margin: auto;
+        position: absolute;
+        transform: translateX(-50%);
+        top: 230px; 
+        .heading_2 {
+            display: block;
+        }
+        .btn {
+            bottom: -28px;
+            display: table;
+            left: 50%;
+            margin: auto;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.footer {
+    background: $black;
+    padding: 7px 0 40px 0;
+    text-align: center;
+    .footer_border {
+        border-bottom: 1px solid $white;
+        height: 5px;
+    }
+    .btn {
+        border: 1px solid $white;
+        display: inline-block;
+        margin: 40px auto;
+    }
+    p {
+        color: $white;
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .footer_nav {
+        .menu {
+            margin: 0 auto;
+            justify-content: center;
+            li {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                font-size: 12px;
+            }
+            li:after {
+                color: #fff;
+                content: " | ";
+                margin: 0 7px;
+            }
+            a {
+                background: none;
+                color: $white;
+                font-family: "neutrabook";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1;
+                margin: 0 7px;
+                padding: 0;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            li:last-child:after {
+                content: " ";
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+    .find_wine {
+        padding: 200px 0 275px 0;
+        .box {
+            padding: 20px 20px 42px 20px;
+            top: 30px;
+            width: 90%;
+            .heading_2 {
+                font-size: 31px;
+                line-height: 41px;
+            }
+            .btn {
+                left: 50%;
+                margin: 0;
+                transform: translate(-50%, 0);
+                white-space: nowrap;
+                width: fit-content;
+            }
+        }
+    }
+    .page-id-215,
+    .page-id-217 {
+        .find_wine {
+            padding: 200px 0 275px 0;
+            .box {
+                top: 30px;
+            }
+        }
+    }
+    .single-wine {
+        .find_wine {
+            padding: 500px 0 275px 0;
+            .box {
+                top: 230px;
+            }
+        }
+    }
+    .footer .footer_nav .menu li {
+        line-height: 20px;
+        a {
+            margin: 0 4px;
+        }
+        a:after {
+            margin: 0;
+        }
+    }
+}

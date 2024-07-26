@@ -1,0 +1,1036 @@
+/* Winemakers Selection 2023
+
+font-family: "aktiv-grotesk-extended", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "aktiv-grotesk-extended", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: "aktiv-grotesk-extended", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+*/
+
+@font-face {
+	font-family: "domainebold";
+	src:
+	  	url("https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/fonts/DomaineDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "neutrabook";
+	src:
+	  	url("https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/fonts/NeutraText-Book.otf") format("opentype");
+}
+@font-face {
+	font-family: "neutralight";
+	src:
+	  	url("https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/fonts/NeutraText-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "neutrademi";
+	src:
+	  	url("https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/fonts/NeutraText-Demi.otf") format("opentype");
+}
+@font-face {
+	font-family: "neutrabold";
+	src:
+	  	url("https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/fonts/NeutraText-Bold.otf") format("opentype");
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	font-size: 100%;
+	overflow-x: hidden;
+	padding-bottom: env(safe-area-inset-bottom);
+}
+h1,
+.heading_1 {
+	font-family: "domainebold";
+	font-weight: bold;
+	font-style: normal;
+	@include mq(small) {
+		font-size: 31px;
+		line-height: 41px;
+	}
+	@include mq(large) {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+h2,
+.heading_2 {
+	font-family: "domainebold";
+	font-weight: bold;
+	font-style: normal;
+	@include mq(small) {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	@include mq(medium) {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	@include mq(large) {
+		font-size: 40px;
+		line-height: 55px;
+	}
+}
+
+h3,
+.heading_3 {
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 4.8px;
+	text-transform: uppercase;
+	@include mq(small) {
+		font-size: 20px;
+	}
+	@include mq(medium) {
+		font-size: 20px;
+	}
+	@include mq(large) {
+		font-size: 24px;
+		line-height: 34px;
+	}
+}
+
+h4,
+.heading_4 {
+	font-family: "domainebold";
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	@include mq(small) {
+		font-size: 20px;
+	}
+	@include mq(medium) {
+		font-size: 20px;
+	}
+	@include mq(large) {
+		font-size: 19px;
+		line-height: 20px;
+	}
+}
+
+h5,
+.heading_5 {
+	display: block;
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	@include mq(small) {
+		font-size: 20px;
+	}
+	@include mq(medium) {
+		font-size: 20px;
+	}
+	@include mq(large) {
+		font-size: 20px;
+		line-height: 34px;
+	}
+}
+h6,
+.heading_6 {
+	display: block;
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	@include mq(small) {
+		font-size: 12px;
+	}
+	@include mq(medium) {
+		font-size: 14px;
+	}
+	@include mq(large) {
+		font-size: 14px;
+		line-height: 31px;
+	}
+}
+
+p, ul li, ol li {
+	font-family: "neutrabook";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 34px;
+}
+a {
+	color: $black;
+	transition: all 0.2s ease-out;
+	&:hover {
+		color: $black;
+		transition: all 0.2s ease-out;
+	}
+}
+::-moz-selection {
+	background: transparent;
+}
+::selection {
+	background: transparent;
+}
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+.content {
+	margin-top: 103px;
+}
+.grid-container {
+	max-width: 100%;
+}
+.animate {
+    opacity: 0;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+.animate.visible {
+    opacity: 1;
+}
+#modal_screen {
+	background: $white;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 120000;
+}
+#modal_content {
+	background: url('https://www.winemakersselection.com/wp-content/themes/wms-theme/assets/images/bg-footer-field.jpg') no-repeat;
+	background-size: cover !important;
+    background-position: bottom center;
+	height: 100%; 
+	left: 0 !important;
+	margin: 0 auto; 
+	overflow-x: hidden; 
+	padding: 0; 
+	position: fixed; 
+	text-align: center;
+	top: 0 !important; 
+	width: 100%; 
+	z-index: 120001;
+	.age_gate_header img {
+		height: auto;
+		margin: 0 auto;
+		width: 296px;
+	}
+	h1 {
+		color: $black;
+		font-family: "domainebold";
+		font-size: 31px;
+		line-height: 41px;
+		margin: 30px auto;
+	}
+	p {
+		color: $black;
+		font-family: "neutrabook";
+		position: relative;
+		z-index: 10;
+	}
+	.content_wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		text-align: center;
+	}
+	.agree {
+		color: $black;
+		font-family: "aktiv-grotesk-extended", sans-serif;
+		font-size: 20px;
+		line-height: 34px;
+		margin: 35px auto;
+		text-transform: uppercase;
+        input[type="checkbox"] {
+			appearance: none;
+            height: 30px;
+            border: 1px solid $black !important;
+            background: transparent;
+            border-radius: 0;
+            color: $black;
+            font-size: 24px !important;
+            margin: 0 15px 5px 0;
+            position: relative;
+            text-align: right;
+            text-transform: uppercase;
+            vertical-align: middle;
+            width: 30px;
+        }
+        input[type="checkbox"]:checked:after {
+            color: $black;
+            content: '✔'; 
+            height: 30px;
+            width: 30px;
+        }
+        input[type="checkbox"]:checked:hover {
+            color: $black;
+        }
+        a {
+            color: $black !important;
+			text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+	nav {
+		margin: 30px auto;
+		position: relative;
+		text-align: center;
+		z-index: 10;
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		ul {
+			list-style: none; 
+			margin: 0; 
+			padding: 0;
+			width: 100%;
+			li {
+				display: inline-block; 
+				text-align: center; 
+				width: auto;
+			}
+		}
+			.av_go {
+				background: $black;
+				border: 1px solid $black;
+				border-radius: 0;
+				color: $white;
+				cursor: pointer;
+				font-family: "aktiv-grotesk-extended", sans-serif;
+				font-weight: 600;
+				font-style: normal;
+				font-size: 15px;
+				letter-spacing: 2.25px;
+				margin-right: 30px;
+				padding: 16px 20px;
+				text-transform: uppercase;
+				transition: .25s ease-in-out !important;
+				&:hover,
+				&:focus,
+				&:active {
+					background: $white;
+					border: 1px solid $black;
+					color: $black;
+					transition: .25s ease-in-out !important;
+				}
+			}
+			.av_no {
+				background: $black;
+				border: 1px solid $black;
+				border-radius: 0;
+				color: $white;
+				cursor: pointer;
+				font-family: "aktiv-grotesk-extended", sans-serif;
+				font-weight: 600;
+				font-style: normal;
+				font-size: 15px;
+				letter-spacing: 2.25px;
+				padding: 16px 20px;
+				text-transform: uppercase;
+				transition: .25s ease-in-out !important;
+				&:hover,
+				&:focus,
+				&:active {
+					background: $white;
+					border: 1px solid $black;
+					color: $black;
+					transition: .25s ease-in-out !important;
+			}
+		}
+	}
+	#modal_regret_wrapper {
+		height: 100%;
+		padding: 20px;
+		h2 {
+			margin-top: 100px;
+		}
+	}
+	.footer {
+		background: $black;
+		bottom: 0; 
+		padding: 30px 0; 
+		position: absolute; 
+		text-align: center;
+		width: 100%;
+		p {
+			color: $white;
+			font-size: 18px;
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+}
+.classic_ribbon {
+	background: linear-gradient(90deg, rgba(167,166,164,1) 0%, rgba(235,235,235,1) 25%, rgba(169,168,166,1) 60%, rgba(167,166,164,1) 100%);
+	border-bottom: 1px solid $black;
+	border-top: 1px solid $black;
+	display: block;
+	font-size: 24px;
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 1.4px;
+	line-height: 34px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.reserve_ribbon {
+	background: linear-gradient(90deg, rgba(150,110,62,1) 0%, rgba(222,190,144,1) 25%, rgba(213,165,110,1) 60%, rgba(156,116,68,1) 100%);
+	border-bottom: 1px solid $black;
+	border-top: 1px solid $black;
+	display: block;
+	font-size: 24px;
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 1.4px;
+	line-height: 34px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.single-wine {
+	.border_bottom_classic {
+		background: linear-gradient(112deg, rgba(167,166,164,1) 0%, rgba(235,235,235,1) 25%, rgba(169,168,166,1) 60%, rgba(167,166,164,1) 100%);
+		height: 13px;
+		width: 100%;
+	}
+	.border_top_classic {
+		background: linear-gradient(112deg, rgba(167,166,164,1) 0%, rgba(235,235,235,1) 25%, rgba(169,168,166,1) 60%, rgba(167,166,164,1) 100%);
+		height: 13px;
+		width: 100%;
+	}
+	.border_bottom_reserve {
+		background: linear-gradient(112deg, rgba(150,110,62,1) 0%, rgba(222,190,144,1) 25%, rgba(213,165,110,1) 60%, rgba(156,116,68,1) 100%);
+		height: 13px;
+		width: 100%;
+	}
+	.border_top_reserve {
+		background: linear-gradient(112deg, rgba(150,110,62,1) 0%, rgba(222,190,144,1) 25%, rgba(213,165,110,1) 60%, rgba(156,116,68,1) 100%);
+		height: 13px;
+		width: 100%;
+	}
+	.product-slider {
+		.swiper-slide {
+			background-position: bottom center !important;
+			background-size: cover !important;
+			height: 600px;
+			position: relative;
+			.play_button {
+				height: 52px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				width: 52px;
+				z-index: 10;
+			}
+		}
+	}
+	.swiper-nav {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 4;
+    }
+    .swiper-pagination-bullet {
+        background: $white;
+        border: 1px solid $black;
+        display: inline-block;
+        border-radius: 0;
+        height: 9px;
+        margin: 0 3px;
+        opacity: 1;
+        text-indent: -99999em;
+        width: 9px;
+    }
+    .swiper-pagination-bullet-active {
+        background: $black;
+        border: 1px solid $white;
+		opacity: 1;
+    }
+	.product_info {
+		.cell {
+			align-self: center;
+		}
+	}
+	.product_meta {
+		//align-content: center;
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 600px;
+		padding: 0 60px;
+		h1 {
+			color: $black;
+			font-size: 31px;
+			font-weight: 600;
+			line-height: 41px;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+		.buttons {
+			display: flex;
+			flex-direction: row;
+			.btn {
+				display: inline-block;
+				margin: 45px 35px 0 0;
+			}
+		}
+	}
+	.product_attributes {
+		border-collapse: collapse;
+		border-style: solid;
+		border-width: 5px;
+		margin: 80px auto;
+		.award_image {
+			height: 150px;
+			position: absolute;
+			right: -75px;
+			top: -75px;
+			width: 150px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		strong {
+			font-family: 'neutrabold';
+			//-webkit-text-stroke: 0.25px;
+		}
+		.wine_label {
+			background-size: cover !important;
+			background-position: bottom left !important;
+		}
+		.bottom_border {
+			border-style: solid;
+			border-bottom-width: 5px;
+			border-left-width: 5px;
+			border-right-width: 0;
+			border-top-width: 0;
+			padding: 25px 38px;
+		}
+		.left_border {
+			border-style: solid;
+			border-bottom-width: 0;
+			border-left-width: 5px;
+			border-right-width: 0;
+			border-top-width: 0;
+			float: right;
+			padding: 0;
+			width: 150px;
+		}
+		.last_row {
+			border-left-style: solid;
+			border-left-width: 5px;
+			display: flex;
+			flex-direction: row;
+			text-align: center;
+			.classic_scales {
+				display: block;
+				padding: 25px 38px;
+				text-align: left;
+				p {
+					font-weight: 600;
+				}
+				.more_margin {
+					margin-bottom: 5px;
+				}
+				img {
+					margin: -5px 5px 0 5px;
+				}
+			}
+			.reserve_scales {
+				display: flex;
+				flex: auto;
+				flex-direction: column;
+				padding: 14px 38px;
+				p {
+					font-weight: 600;
+					margin: 0;
+				}
+				.more_margin {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.winemaker {
+			float: left;
+			margin: 25px 38px 0 0;
+		}
+		.signature {
+			display: table;
+		}
+		.body_scale {
+			margin-left: -25px !important;
+		}
+		.sweetness_scale {
+			margin-left: 12px !important;
+		}
+	}
+	.single_awards {
+		margin: 50px auto 125px auto;
+		table {
+			border: 1px solid $black;
+			border-collapse: collapse;
+			text-align: center;
+			width: 100%;
+			th {
+				background: $black;
+				color: $white;
+				font-size: 24px;
+				font-weight: 600;
+				letter-spacing: 4.8px;
+				line-height: 34px;
+				padding: 20px 0 0 0;
+			}
+			tr:nth-child(odd) {
+				td {
+					background: #e6e6e6;
+				}
+			}
+			td {
+				font-family: "neutrabook";
+				font-size: 16px;
+				line-height: 34px;
+			}
+		}
+	}
+	.content-wine-slider {
+		margin: 0 auto -150px auto;
+		position: relative;
+		.wine-slider-container {
+			position: relative;
+			width: 100%;
+			.main-content {
+				margin: 0 auto;
+				text-align: center;
+				h2 {
+					margin-bottom: 30px;
+				}
+			}
+			.wine_slider {
+				background: none;
+				overflow: hidden;
+				margin: 0 auto;
+				width: 100%;
+				.wine-swiper-container {
+					.swiper-slide {
+						position: relative; 
+						text-align: center;
+						img {
+							height: 415px;
+							-webkit-transition: all 0.3s ease-out;
+							-moz-transition: all 0.3s ease-out;
+							transition: all 0.3s ease-out;
+							width: auto;
+							&:hover {
+								transform: scale(1.05);
+								-webkit-transition: all 0.3s ease-out;
+								-moz-transition: all 0.3s ease-out;
+								transition: all 0.3s ease-out;
+							}
+						}
+						h4 {
+							max-width: 50%;
+							margin: 0 auto;
+						}
+						a {
+							display: block;
+							margin-top: 20px;
+						}
+					}
+					.swiper-prev {
+						cursor: pointer;
+						height: 37px;
+						left: 0;
+						position: absolute;
+						top: 50%;
+						width: 32px;
+						z-index: 10;
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+					.swiper-next {
+						cursor: pointer;
+						height: 37px;
+						right: 0;
+						position: absolute;
+						top: 50%;
+						width: 32px;
+						z-index: 10;
+						&:hover {
+							opacity: 0.6;
+						}
+					}
+				}
+			} 
+		}
+	}
+}
+.page-id-2 {
+	#content-block-0 {
+		margin: 0 auto 150px auto;
+		max-width: 60%;
+		.awards {
+			position: relative;
+			text-align: center;
+			.box {
+				background: $white;
+				display: table;
+				padding: 40px 60px;
+				margin: 0 auto;
+				.heading_2 {
+					display: block;
+				}
+				.btn {
+					bottom: -28px;
+					display: table;
+					left: 50% !important;
+					margin: auto;
+					position: absolute;
+					right: auto;
+					transform: translateX(-50%) !important;
+				}
+			}
+		}
+	}
+}
+.page-id-3,
+.page-id-219,
+.page-id-223 {
+	.content-block {
+		.plain {
+			margin: 60px auto -150px auto;
+			.cell {
+				border: none;
+				p {
+					margin: 20px 0;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+.page-id-217 {
+	.heading_box {
+		padding: 40px 60px !important;
+	}
+}
+.page-id-219 {
+	.find_wine {
+		.box {
+			display: none;
+		}
+	}
+}
+.page-id-465 {
+	.inner-content {
+		text-align: center;
+		h1 {
+			margin: 80px auto 40px auto;
+		}
+		.accordion {
+			.reserve_ribbon,
+			.classic_ribbon {
+				border-left: 1px solid $black;
+				border-right: 1px solid $black;
+			}
+			.accordion-title {
+				border-bottom: 1px solid $black;
+				border-left: 1px solid $black;
+				border-right: 1px solid $black;
+				border-top: none;
+				color: $black;
+				font-family: "aktiv-grotesk-extended", sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 14px;
+				letter-spacing: 2.8px;
+				line-height: 34px;
+				text-transform: uppercase;
+				&:before {
+					font-size: 20px;
+					margin-top: -1rem;
+				}
+				&:hover,
+				&:focus {
+					background: $black;
+					color: $white;
+				}
+			}
+			.accordion-item {
+				&.is-active  {
+					background: $black;
+					.accordion-title {
+						color: $white;
+					}
+				}
+			}
+			.accordion-content {
+				border: 1px solid $black;
+				padding: 0;
+				table {
+					border-collapse: collapse;
+					margin: 0 auto;
+					width: 100%;
+					tr:nth-child(even) {
+						background: #e6e6e6;
+					}
+					td {
+						font-size: 16px;
+						line-height: 25px;
+    					padding: 5px 10px;
+					}
+				}
+			}
+		}
+	}
+}
+// Entry content  
+.entry-content {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+		}
+} 
+@media only screen and (min-width: 751px) and (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.reserve_ribbon,
+	.classic_ribbon {
+		font-size: 20px !important;
+	}
+	.single-wine {
+		.product-slider {
+			.swiper-slide {
+				height: 550px;
+				padding: 0;
+			}
+		}
+		.product_meta {
+			padding: 40px 60px;
+			.uppercase {
+				margin-bottom: 35px;
+			}
+			.btn {
+				margin: 10px 0 0 0;
+			}
+		}
+		.product_attributes {
+			margin: 40px auto;
+			max-width: 90%;
+			.award_image {
+				height: 100px;
+				left: -25px;
+				right: auto;
+				top: -25px;
+				width: 100px;
+			}
+			.wine_label {
+				height: 550px;
+			}
+			.bottom_border {
+				border-left-width: 0;
+				padding: 24px 14px;
+			}
+			.last_row {
+				border-left-width: 0;
+				.classic_scales {
+					padding: 24px 14px;
+				}
+				.body_scale{
+					font-size: 14px;
+				}
+				.sweetness_scale {
+					font-size: 14px;
+					margin-left: 0 !important;
+				}
+				.left_border {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+
+}
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.content {
+		margin-top: 88px;
+	}
+	#modal_content {
+		.content_wrapper {
+			justify-content: flex-start;
+		}
+		.age_gate_header img {
+			margin: 40px auto;
+			width: 200px;
+		}
+		.agree {
+			font-size: 13px;
+			line-height: 20px;
+			input[type=checkbox] {
+				margin: 0 5px 5px 0;
+			}
+		}
+		h1 {
+			color: $black;
+			font-size: 22px;
+			line-height: 32px;
+		}
+		p {
+			font-size: 15px;
+			line-height: 22px;
+		}
+		p small {
+			font-size: 11px;
+			max-width: 100%;
+		}
+	}
+	.reserve_ribbon,
+	.classic_ribbon {
+		font-size: 20px !important;
+	}
+	.page-id-2 {
+		#content-block-0 {
+			height: auto;
+			max-width: 100%;
+			.awards {
+				.box {
+					padding: 40px;
+					.btn {
+						width: 183px;
+					}
+				}
+			}
+		}
+	}
+	.single-wine {
+		.product-slider {
+			.swiper-slide {
+				height: 350px;
+				padding: 0;
+			}
+		}
+		.product_meta {
+			height: auto;
+			justify-content: flex-start;
+			padding: 40px 25px;
+			.uppercase {
+				margin-bottom: 35px;
+			}
+			.btn {
+				margin: 20px 20px 0 0 !important;
+				font-size: 12px;
+				white-space: nowrap;
+			}
+		}
+		.product_attributes {
+			margin: 40px auto;
+			max-width: 90%;
+			.award_image {
+				height: 100px;
+				left: -25px;
+				right: auto;
+				top: -25px;
+				width: 100px;
+			}
+			.wine_label {
+				height: 350px;
+			}
+			.bottom_border {
+				border-left-width: 0;
+				padding: 24px 14px;
+			}
+			.last_row {
+				border-left-width: 0;
+				.classic_scales {
+					padding: 24px 14px;
+				}
+				.body_scale{
+					font-size: 14px;
+				}
+				.sweetness_scale {
+					font-size: 14px;
+					margin-left: 0 !important;
+				}
+				.left_border {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+		.single_awards {
+			margin: 50px 20px 125px 20px;
+			max-width: 90%;
+		}
+	}
+}

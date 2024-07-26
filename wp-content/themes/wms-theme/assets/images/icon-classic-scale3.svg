@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="131.168" height="20" viewBox="0 0 131.168 20">
+  <line id="b" data-name="Line 127" x1="9.084" y1="9.5" x2="127.084" y2="9.5" fill="none" stroke="#000" stroke-width="3"/>
+  <circle cx="9.584" cy="10" r="7.5" fill="#fff" stroke="#000" stroke-width="3"/>
+  <circle cx="37.584" cy="10" r="7.5" fill="#fff" stroke="#000" stroke-width="3"/>
+  <circle cx="65.584" cy="10" r="7.5" stroke="#000" stroke-width="3"/>
+  <circle cx="93.584" cy="10" r="7.5" fill="#fff" stroke="#000" stroke-width="3"/>
+  <circle cx="121.584" cy="10" r="7.5" fill="#fff" stroke="#000" stroke-width="3"/>
+</svg>

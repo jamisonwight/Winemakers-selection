@@ -1,0 +1,56 @@
+{
+  "name": "WinemakersSelection",
+  "version": "2.0.0",
+  "description": "boilerplate with Parcel JS",
+  "license": "GPL-2.0 AND MIT",
+  "devDependencies": {
+    "@juggle/resize-observer": "^3.2.0",
+    "@uupaa/dynamic-import-polyfill": "^1.0.2",
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "core-js": "^3.8.2",
+    "dynamic-import-polyfill": "^0.1.1",
+    "objectFitPolyfill": "^2.3.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-css-url-loader": "^1.0.5",
+    "parcel-plugin-goodie-bag": "^2.0.0",
+    "parcel-plugin-inlinesvg": "^0.1.0",
+    "parcel-plugin-purifycss": "^1.0.5",
+    "parcel-plugin-url-loader": "^1.2.6",
+    "parcel-plugin-watch-reload": "^1.0.3",
+    "sass": "^1.69.4",
+    "yarn-upgrade-all": "^0.7.2"
+  },
+  "scripts": {
+    "watch": "parcel watch ./assets/scripts/js/main.js --public-url ./",
+    "dev": "parcel ./assets/scripts/js/main.js",
+    "sass": "sass",
+    "build": "parcel build ./assets/scripts/js/main.js --public-url ./"
+  },
+  "jshintConfig": {
+    "globals": {
+      "jQuery": true
+    }
+  },
+  "watchreload": {
+    "files": "**/*.php"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "es6-promise": "^4.2.8",
+    "foundation-sites": "^6.6.3",
+    "gsap": "^3.6.1",
+    "is-in-viewport": "^3.0.4",
+    "jquery": ">1.7.0",
+    "jquery-lazy": "^1.7.11",
+    "motion-ui": "^2.0.3",
+    "parcel": "^1.12.4",
+    "postcss": "^8.2.15",
+    "swiper": "^6.4.5"
+  },
+  "browserslist": "> 0.25%, IE 11"
+}
